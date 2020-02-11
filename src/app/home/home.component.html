@@ -1,4 +1,4 @@
 <app-header></app-header>
 <app-totalbudget></app-totalbudget>
 <app-additemform (formSubmit)="addItem($event)"></app-additemform>
-<app-budgetitemlist [budgetItems]="budgetItems"></app-budgetitemlist>
+<app-budgetitemlist [budgetItems]="budgetItems" (delete)="deleteItem($event)"></app-budgetitemlist>

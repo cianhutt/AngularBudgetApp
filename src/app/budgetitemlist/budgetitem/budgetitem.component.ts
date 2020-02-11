@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { BudgetItem } from 'src/shared/models/budgetitemmodel';
+
 
 @Component({
   selector: 'app-budgetitem',
@@ -6,10 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./budgetitem.component.scss']
 })
 export class BudgetitemComponent implements OnInit {
-  @Input() isIncome: boolean=false;
+  @Input() item: BudgetItem;
+  @Output() xButtonClick: EventEmitter<any> = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onXButtonClick(){
+    this.xButtonClick.emit();
   }
 
 }
