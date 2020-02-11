@@ -1,0 +1,52 @@
+#addform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    height: 80px;
+
+    #additems{
+        // border:  2px solid darkgray;
+         width: 60%;
+        height: 40px;
+        border-radius: 5px;
+        text-align: center;
+
+        // form{
+        //     // height: 70px;
+        // }
+        
+
+        input, button{
+            
+            margin: 0px 10px;
+            height: 40px;
+            width: 150px;
+            border-radius: 5px;
+            border: 0px solid;
+            font-family: 'Montserrat';
+            font-size: 12px;
+           
+        }
+        input[type=text]{
+            padding: 5px;
+            background-color:#eaeaea;
+            padding-left: 10px;
+            
+        }
+        input[name=desc]{
+            width:300px;
+        }
+        button{
+            width: 10%;
+            cursor: pointer;
+            color:white;
+            background:rgb(235, 131, 147);
+        }
+        
+    }
+   hr{
+            width: 100%;
+        }
+}

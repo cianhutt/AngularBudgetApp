@@ -1,0 +1,13 @@
+<div id="addform" class="pure-form">
+    <div id="additems">
+    <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+        
+          <input type="text" required name="amount" placeholder="Enter Amount" [ngModel]="item.amount">
+          <input type="text" required name="desc" placeholder="Enter Description" [ngModel]="item.desc">
+          <button type="submit" [disabled]="!itemForm.valid">Add</button>
+          
+    </form>
+    <hr>
+</div>
+
+</div>
