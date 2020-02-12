@@ -1,4 +1,7 @@
 <app-header></app-header>
-<app-totalbudget></app-totalbudget>
+<div id="totalBudget">
+    <h2 class="green">{{ totalBudget }}</h2>
+</div>
+
 <app-additemform (formSubmit)="addItem($event)"></app-additemform>
 <app-budgetitemlist [budgetItems]="budgetItems" (delete)="deleteItem($event)"></app-budgetitemlist>

@@ -16,7 +16,7 @@
                 <app-budgetitem
                 *ngIf="item.amount<0"
                 [item]="item"
-                (xButtonClick)="delete(item)">
+                (xButtonClick)="onDeleteButtonClicked(item)">
                 </app-budgetitem>
             </div>
 
